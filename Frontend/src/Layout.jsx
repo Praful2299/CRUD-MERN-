@@ -1,14 +1,17 @@
-import { Link , Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import Navbars from "./Navbars";
+import Footer from "./Footer";
 
 const Layout=()=>{
     return(
         <>
+        <div id="root">
         <Navbars/>
-        <hr color="black"/>
+        <main>  
         <Outlet/>
-        <hr color="black"/>
-        <h6 align="center">WWW.MYCOMPANY.COM</h6>   
+        </main>
+        <Footer/>
+        </div> 
         </>
     )
 }

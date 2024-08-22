@@ -1,9 +1,11 @@
-
+import backimg from './images/back.jpg'
 
 const Home=()=>{
     return(
         <>
-        <h1 align="center" >Welcome to CRUD Application!!</h1>
+         
+         <img src={backimg} height="600px" width="100%" alt="" style={{margin:"auto"}}  />
+         
         </>
     )
 }

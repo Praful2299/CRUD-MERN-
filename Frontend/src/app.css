@@ -1,0 +1,27 @@
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+  
+main {
+    flex: 1;
+}
+  
+footer {
+    background-color: #343a40; 
+    color: #f8f9fa; 
+    padding: 1rem;
+    text-align: center;
+}
+.navcomp {
+    margin-left: 15px; 
+    font-weight: bold;
+  }
+
+.searchdata
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,6 +1,8 @@
 import { useState } from "react";
 import axios from "axios";
 import Table from 'react-bootstrap/Table';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
 
 const Search=()=>{
     const[rollno,setrollno]=useState("");
@@ -30,10 +32,19 @@ const Search=()=>{
     return(
         <>
         <h1 align="center"  >Search Page</h1>
-
-        Enter Roll Number :- <input type="text" name="" id="" value={rollno} onChange={(e)=>{setrollno(e.target.value)}} /> <br />
-        <button onClick={handlesearch}>Search</button>
-
+      <div className="searchdata">
+         <h5>Enter Roll Number :-</h5>
+        <Form className="d-flex" style={{marginLeft:"15px"}}>
+            <Form.Control
+              type="search"
+              placeholder="Search"
+              className="me-2"
+              aria-label="Search"
+              value={rollno} onChange={(e)=>{setrollno(e.target.value)}}
+            />
+            <Button variant="outline-success" onClick={handlesearch}>Search</Button>
+          </Form>
+          </div>
         <hr />
         <Table striped bordered hover>
       <thead>

@@ -30,13 +30,13 @@ const Insert=()=>{
 
     return(
         <>
-        <h1 align="center">Insert Student Record</h1>
+        <h1 style={{textAlign:"center",marginTop:"5px"}}>Insert Student Record</h1>
 
         <Form style={{width:"60%" , margin:"auto"}}>
       
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Enter Roll No.</Form.Label>
-        <Form.Control type="text" placeholder="Roll No." value={input.rollno} name="rollno" onChange={handleinput} />
+        <Form.Control type="text" placeholder="Roll No." value={input.rollno} name="rollno" onChange={handleinput} autoFocus />
       </Form.Group>
 
       <Form.Group className="mb-3" controlId="formBasicEmail">
